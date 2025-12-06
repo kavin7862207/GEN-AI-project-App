@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grok Multimodal Agent</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Grok Multimodal Agent</h1>
+            <p>Roleplay • Image • Video</p>
+        </header>
+        
+        <main>
+            <div class="chat-section">
+                <div id="chat-history" class="chat-history">
+                    <div class="message system">
+                        <p>Welcome! Enter a scenario to start the roleplay.</p>
+                    </div>
+                </div>
+                <div class="input-area">
+                    <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off">
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+            
+            <div class="media-section">
+                <div class="media-container" id="media-display">
+                    <div class="placeholder">
+                        <p>Generated visuals will appear here</p>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button id="gen-image-btn" class="secondary-btn">Generate Image</button>
+                    <button id="gen-video-btn" class="secondary-btn">Generate Video</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
